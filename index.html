@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -15,15 +15,31 @@
 
     <style>
       body {
-          font-family: 'Poppins', sans-serif;
-          background: linear-gradient(135deg, #fdfbf7 0%, #f5efe6 100%);
+        font-family: "Poppins", sans-serif;
+        background: linear-gradient(135deg, #fdfbf7 0%, #f5efe6 100%);
       }
-      .hindi-font { font-family: 'Noto Sans Devanagari', sans-serif; }
+      .hindi-font {
+        font-family: "Noto Sans Devanagari", sans-serif;
+      }
 
       /* Smooth Custom Scrollbar */
-      ::-webkit-scrollbar { width: 4px; }
-      ::-webkit-scrollbar-track { background: #f5efe6; }
-      ::-webkit-scrollbar-thumb { background: #c5a880; border-radius: 4px;}
+      ::-webkit-scrollbar {
+        width: 4px;
+      }
+      ::-webkit-scrollbar-track {
+        background: #f5efe6;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #c5a880;
+        border-radius: 4px;
+      }
+     /* Apply to every element on the page */
+*, *::before, *::after {
+    -webkit-user-select: none !important; /* Safari */
+    -moz-user-select: none !important;    /* Firefox */
+    -ms-user-select: none !important;     /* IE/Edge */
+    user-select: none !important;         /* Standard */
+}
     </style>
   </head>
   <body class="text-stone-800 min-h-screen flex flex-col antialiased">
@@ -117,5 +133,25 @@
         TALI ARDAS KIRTAN
       </p>
     </footer>
-    </body>
-    </html>
+    <script>
+    /*
+    document.addEventListener('contextmenu', function(e) {
+        e.preventDefault();
+    });
+    const restrictEvents = ['copy', 'cut', 'paste'];
+    restrictEvents.forEach(eventType => {
+        document.addEventListener(eventType, function(e) {
+            e.preventDefault();
+        });
+    });
+    document.addEventListener('keydown', function(e) {
+        if (e.key === 'F12') {e.preventDefault();}
+        if (e.ctrlKey && e.shiftKey && (e.key === 'I' || e.key === 'C' || e.key === 'J')) {e.preventDefault();}
+        if (e.metaKey && e.altKey && (e.key === 'i' || e.key === 'j' || e.key === 'c')) {e.preventDefault();}
+        if ((e.ctrlKey || e.metaKey) && e.key === 'u') {e.preventDefault();}
+        if ((e.ctrlKey || e.metaKey) && e.key === 's') {e.preventDefault();}
+    });
+    */
+    </script>
+</body>
+</html>
