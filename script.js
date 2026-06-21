@@ -76,8 +76,8 @@ function openBhajan(id) {
         .map((para, index) => {
             const textColorClass =
                 index % 2 === 0
-                    ? "text-red-600"
-                    : "text-blue-600";
+                    ? "text-red-500"
+                    : "text-blue-500";
 
             const lines = para
                 .split("\n")
@@ -148,7 +148,7 @@ function openBhajan(id) {
         `
             : ""
         }
-        <div class="text-center px-2 border-b border-stone-100 pb-4">
+        <div class="text-center px-1 border-b border-stone-100 pb-4">
             <div class=" text-lg md:text-xl tracking-wide font-medium">
                 ${highlightedLyricsHTML}
             </div>
